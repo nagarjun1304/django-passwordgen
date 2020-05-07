@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <p>Naga's Password generator</p>
+</div>
+
+<h3>Click to generate new passowrd</h3>
+
+<form action="password">
+  <select name="lengthnaga">
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12" selected="selected">12</option>
+  </select> Length
+
+<br>
+<br>
+<input type="checkbox" name="uppercase"> uppercase
+<input type="checkbox" name="special"> special
+<input type="checkbox" name="numbers"> numbers
+
+<input type="submit" value="generate new password">
+
+</form>
+
+<br>
+<br>
+<br>
+
+
+<a href="{% url 'about' %}">about</a>
